@@ -24,7 +24,7 @@ Of dit daadwerkelijk het geval is geworden, weet ik niet. Zal dit verder uitzoek
 
 - [0.0.0.0:8000](http://0.0.0.0:8000)
 
-5. Open de **main.html**.
+5. Open de **main/main.html**.
 
 In de **main/** folder staat de code voor de SVG.
 
