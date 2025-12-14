@@ -20,6 +20,12 @@ Of dit daadwerkelijk het geval is geworden, weet ik niet. Zal dit verder uitzoek
     npx tsc -w
     ```
 
+4. Ga naar de localhost:
+
+- [0.0.0.0:8000](http://0.0.0.0:8000)
+
+5. Open de **main.html**.
+
 In de **main/** folder staat de code voor de SVG.
 
 ---
