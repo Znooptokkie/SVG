@@ -1,0 +1,192 @@
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+body
+{
+    background-color: rgb(5, 5, 23);
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 7.5rem auto 5rem;
+    gap: 7.5rem;
+}
+
+#profile-pic-svg,
+#language-main-svg
+{
+    max-width: 35rem !important;
+}
+
+#profile-pic-svg .thin-inner-border-group
+{
+    animation: rotate 30s linear infinite;
+    transform-origin: center;
+}
+
+#profile-pic-svg .big-inner-border-group
+{
+    animation: rotate 80s linear infinite reverse;
+    transform-origin: center;
+}
+
+#profile-pic-svg .background-group
+{
+    animation: rotate 180s linear infinite;
+    transform-origin: center
+}
+
+#profile-pic-svg .background-group  .bg-child
+{
+    backdrop-filter: blur(25px);
+}
+
+#profile-pic-svg .thin-inner-border-group,
+#profile-pic-svg .big-inner-border-group,
+#profile-pic-svg .background-group
+{
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#education-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+#education-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+#education-section .wrapper .education-article-context {
+    position: absolute;
+    top: 140px;
+    left: 60px;
+}
+
+
+#education-section .wrapper .education-article-context .education-content,
+#education-section .wrapper .education-article-context .education-painter-svg-content,
+#education-section .wrapper .education-article-context .education-wellant-svg-content {
+    display: flex;
+    gap: 2.5rem;
+    min-height: 325px !important;
+    max-width: 100%;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-excerpt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 45% !important;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-excerpt p {
+    color: #33518e; 
+    font-size: 1.25rem;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#education-section .wrapper .education-article-context .education-content .separator {
+    width: 3px;
+    align-self: stretch;
+    background-color: rgba(158, 190, 255, 0.05);
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties {
+    width: 45%;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties h4 {
+    font-size: 1.5rem;
+    color: #33518e; 
+    margin-bottom: 1.5rem;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .education-ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .education-ul li p {
+    color: #33518e; 
+    font-size: 1.25rem;
+    margin: .5rem; // VERANDEREN 
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .education-ul li p:first-child {
+    font-weight: bold;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .education-ul li p:nth-child(2) {
+    font-style: italic;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .education-ul li .completion-rating-container {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .green-rate {
+    background-color: #2ecc71; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 0 #97f29733;
+    border-radius: 4px;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate:not(.green-rate) {
+    background-color: rgba(158, 190, 255, 0.1);
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate {
+    width: 60px;
+    height: 13px;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate:first-child {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate:nth-child(2),
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate:nth-child(3),
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate:nth-child(4) {
+    clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .completion-rating-container .rate:last-child {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .rijnland-properties-spec,
+#education-section .wrapper .education-article-context .education-content .education-properties .certificates-properties {
+    list-style: square;
+    margin-left: 1rem;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .rijnland-properties-spec li p,
+#education-section .wrapper .education-article-context .education-content .education-properties .certificates-properties li p {
+    color: #33518e;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .rijnland-properties-spec li::marker,
+#education-section .wrapper .education-article-context .education-content .education-properties .certificates-properties li::marker {
+    color: #2ecc71;
+}
+
+#education-section .wrapper .education-article-context .education-content .education-properties .certificates-properties {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
