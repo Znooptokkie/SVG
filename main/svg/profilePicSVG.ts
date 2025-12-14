@@ -200,7 +200,7 @@ function imageElement(): void
     const image = new SVGFactory<SVGImageAttributes>(htmlSVGElement, "image",
     {
         class: "svg-image",
-        href: "./static/images/Person-tree.webp",
+        href: "./images/Person-tree.webp",
         x: 300,
         y: 300,
         width: 600,
